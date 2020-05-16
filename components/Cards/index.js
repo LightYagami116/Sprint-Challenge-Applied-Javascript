@@ -61,6 +61,6 @@ function Cards(cardAtts) {
     authImg.src = cardAtts.authorPhoto;
     authName.textContent = `By: ${cardAtts.authorName}`;
 
-
+    //returns cards to they can be rendered to page
     return card;
 }
