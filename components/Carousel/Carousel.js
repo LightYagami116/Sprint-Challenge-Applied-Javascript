@@ -17,3 +17,35 @@
     <div class="right-button"> > </div>
   </div>
 */
+const carouselContents = document.querySelector('.carousel-contents');
+
+//varibles for carousel images
+const imgMountains = './assets/carousel/mountains.jpeg';
+const imgComputer = './assets/carousel/computer.jpeg';
+const imgTrees = './assets/carousel/trees.jpeg';
+const imgTurntable = './assets/carousel/turntable.jpeg';
+
+//create elements
+const carousel = document.createElement('div');
+const leftButton = document.createElement('div');
+const mountains = document.createElement('img');
+const computer = document.createElement('img');
+const trees = document.createElement('img');
+const turntable = document.createElement('img');
+const rightButton = document.createElement('div');
+
+//append children to elements
+carousel.appendChild(leftButton);
+carousel.appendChild(mountains);
+carousel.appendChild(computer);
+carousel.appendChild(trees);
+carousel.appendChild(turntable);
+carousel.appendChild(rightButton);
+
+//add classes & attributes to elements
+carousel.classList.add('carousel');
+carousel.classList.add('left-button');
+carousel.classList.add('right-button');
+mountains.setAttribute('src', imgMountains);
+computer.setAttribute('src', imgComputer);
+trees.setAttribute('src', imgTurntable);
